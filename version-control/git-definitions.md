@@ -5,6 +5,8 @@
 
 Hi , my name is Meric and i like coding .. :)
 
+I made a change by adding this line .. :)
+
 
 * What is version control?  Why is it useful?
 It shows the versions of the file that has been changed ..
