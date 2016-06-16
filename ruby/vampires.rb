@@ -6,7 +6,7 @@ while 0 < emp
 puts 'What is your name ?'
 name = gets.chomp
 
-if name != 'Drake Cula' || 'Tu Fang'
+if name == ( 'Drake Cula' || 'Tu Fang' )
   result = 'Definitely a vampire !'
 end
 
@@ -38,27 +38,19 @@ end
 
 puts 'DO you have any allergies ? If so write them when you are done you can write "done" '
 allergies = gets.chomp
-break if allergies == 'no'
-while allergies != 'sunshine'
+  break if allergies == 'no'
+  while allergies != 'sunshine'
   puts 'Another one ? '
   allergies = gets.chomp
   break if allergies == 'done'
-end
+  end
+result = 'Mericicicici'
 
 
-
-if age && garlic && insurance == true
-  result = 'Probably NOT a vampire !'
-elsif (age && garlic == false) && insurance == true
-  result = 'Probably a vampire !'
-elsif age && garlic && insurance == false
-  result = 'Almost certainly a vampire !'
-else result = 'Results inconclusive !'
-end
   emp -= 1
 
+  puts result
 end
 
 
-
-puts result
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
