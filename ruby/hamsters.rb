@@ -10,5 +10,14 @@ color = gets.chomp
 puts "Is the hamster good for adoption ?"
 adoption = gets.chomp
 
-puts "Age of the hamster ?"
+puts "What is age of the hamster ? If not known , type '?' .. "
 age = gets.chomp.to_i
+if age == "?"
+  age = nil
+end
+
+puts "Name >> #{name} + "
+puts "Volume level >> #{volume} + "
+puts "Color >> #{color} +"
+puts "Good for adoption >> #{adoption} +"
+puts "Age >> #{age} +"
