@@ -12,7 +12,7 @@ adoption = gets.chomp
 
 puts "What is age of the hamster ? If not known , type '?' .. "
 age = gets.chomp.to_i
-if age == "?"
+if age != Integer
   age = nil
 end
 
