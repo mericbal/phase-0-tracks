@@ -4,14 +4,11 @@ emp = gets.chomp.to_i
 while 0 < emp
 
 puts 'What is your name ?'
-name = gets.chomp
-
-if name == ( 'Drake Cula' || 'Tu Fang' )
-  result = 'Definitely a vampire !'
-end
+name = gets.chomp.to_s
 
 puts 'How old are you ?'
 age = gets.chomp.to_i
+
 puts 'What year were you born ?'
 bdate = gets.chomp.to_i
 
@@ -19,6 +16,7 @@ if 2016 - bdate == age
   age = true
 else age = false
 end
+
 
 puts 'Our cafeteria serves garlic bread . Should we order some for you ? '
 garlic = gets.chomp
@@ -36,21 +34,44 @@ if insurance == 'yes'
 else insurance = false
 end
 
-puts 'DO you have any allergies ? If so write them when you are done you can write "done" '
+if age && (garlic || insurance) == true
+  result = 'Probably a normal human !'
+elsif age && (garlic || insurance )  == false
+  result = 'Probably a vampire !!'
+elsif (age && garlic && insurance)== false
+  result = 'Almost a vampire !!!'
+else result = 'Result unknown ???'
+
+end
+
+puts result
+
+puts 'Do you have any allergies ? If yes, please type them one by one .. When you are done you can simply write "done" ..'
 allergies = gets.chomp
-  break if allergies == 'no'
-  while allergies != 'sunshine'
-  puts 'Another one ? '
+while allergies != 'no'
+  puts 'Another allergies ? If not , simply type "done" ..'
   allergies = gets.chomp
-  break if allergies == 'done'
+  if allergies == 'sunshine'
+    result = 'Might be a vampire because of sunshine allergy !!!'
   end
-result = 'Mericicicici'
+  break if allergies == 'done'
+
+end
 
 
-  emp -= 1
+if name == 'drake cula'
+    result = 'Definitely a vampire !!!'
+elsif name == 'tu fang'
+    result = 'Definitely a vampire !!!'
+else name = name
+
+end
 
   puts result
+
+  emp -= 1
 end
+
 
 
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
