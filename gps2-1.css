@@ -1,0 +1,38 @@
+
+header{
+  text-align: center;
+  font-family: "Comic Sans MS", sarif;
+  font-style: italic;
+
+ }
+.column-1{
+  float: left;
+  position: relative;
+  background-color: gray;
+  border-style: dashed;
+  border-color: red;
+  font-family: "Helvetica", serif;
+  padding: 10px;
+  margin: 0 auto;
+  width: 45%;
+  height: 1000px;
+}
+
+
+.column-2{
+  float: right;
+  position: relative;
+  width: 45%;
+
+  background-color: red;
+  border-color: yellow;
+  border-style: solid;
+  font-family: "Georgian", serif;
+  padding: 10px;
+  height: 1000px;
+
+}
+footer{
+  clear: both;
+  text-align: center;
+ }
