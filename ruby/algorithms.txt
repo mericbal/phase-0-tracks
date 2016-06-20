@@ -14,3 +14,20 @@
         -press 3
       -otherwise
         -press information button
+
+
+
+
+- walk in the kitchen
+- grab a pen
+- grab a paper
+- open the drawer
+- if there is a no bread
+  - write 'bread' on the paper
+- open the fridge
+  - check eggs
+    - if eggs are less than 2
+      write 'eggs' on the paper
+
+
+-
