@@ -1,0 +1,16 @@
+-check if the elevator door is open
+  -until it is open
+    -push the call button
+    -wait one minute
+  -if it is open
+    -go straight one feet
+    -turn left
+    -click one of these buttons
+      - if you are going to floor one
+        -press 1
+      - if you are going to floor two
+        -press 2
+      - if you are goung to floor three
+        -press 3
+      -otherwise
+        -press information button
