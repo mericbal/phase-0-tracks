@@ -1,10 +1,6 @@
-
-i = 0
-
-puts 'Enter a string for encription ..'
-string = gets.chomp
-
-while i < string.length
+def encrypt(string)
+  i = 0
+  while i < string.length
 
   if string[i] == ' '
     string[i] = ' '
@@ -14,30 +10,44 @@ while i < string.length
   end
 
   i += 1
-end
-
-puts string
-
-
-
-
-
-
-i = 0
-
-puts 'Enter a string for decription ..'
-string = gets.chomp
-alp = 'abcdefghijklmnopqrstuvwxyz'
-
-while i < string.length
-  if string[i] == 'a'
-    string[i] = 'z'
-  elsif string[i] == ' '
-    string[i] = ' '
-  else
-    string[i] = alp[alp.index(string[i])-1]
   end
-  i += 1
+  puts string
 end
 
-puts string
+
+def decrypt(string)
+  i = 0
+  alp = 'abcdefghijklmnopqrstuvwxyz'
+  while i < string.length
+    if string[i] == 'a'
+      string[i] = 'z'
+    elsif string[i] == ' '
+      string[i] = ' '
+    else
+      string[i] = alp[alp.index(string[i])-1]
+    end
+    i += 1
+  end
+  puts string
+end
+
+
+
+
+
+
+puts 'Hello Agent ! What would you like to do with your password today ? Please say either "Encrypt" or "Decrypt" ..'
+answer = gets.chomp.downcase
+
+if answer == 'e'
+  puts 'Encription selected ! Please input the password you would like to encrypt ..'
+  string = gets.chomp.downcase
+  puts 'Here is your encrypted password ='
+  puts encrypt(string)
+end
+
+# puts 'Here is your encrypted password = #{string} !'
+# puts 'Would you like to do anything else ? "Yes" or "No" ?'
+# answer2 = gets.chomp.downcase!
+# if answer2 == 'yes'
+#   puts
