@@ -39,14 +39,23 @@ end
 puts 'Hello Agent ! What would you like to do with your password today ? Please say either "Encrypt" or "Decrypt" ..'
 answer = gets.chomp.downcase
 
+until (answer == 'e') || (answer == 'd')
+  puts 'Please select one of the options .. E or D  ?'
+  answer = gets.chomp.downcase
+end
+
 if answer == 'e'
   puts 'Encription selected ! Please input the password you would like to encrypt ..'
   string = gets.chomp.downcase
   puts 'Here is your encrypted password ='
   puts encrypt(string)
+else answer == 'd'
+  puts 'Decryption selected ! Please input the password you would like to decrypt ..'
+  string = gets.chomp.downcase
+  puts 'Here is your decrypted password ='
+  puts decrypt(string)
 end
 
-# puts 'Here is your encrypted password = #{string} !'
 # puts 'Would you like to do anything else ? "Yes" or "No" ?'
 # answer2 = gets.chomp.downcase!
 # if answer2 == 'yes'
