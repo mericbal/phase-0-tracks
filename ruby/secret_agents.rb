@@ -49,11 +49,13 @@ if answer == 'e'
   string = gets.chomp.downcase
   puts 'Here is your encrypted password ='
   puts encrypt(string)
+  puts 'Thanks Agent !'
 else answer == 'd'
   puts 'Decryption selected ! Please input the password you would like to decrypt ..'
   string = gets.chomp.downcase
   puts 'Here is your decrypted password ='
   puts decrypt(string)
+  puts 'Thanks Agent !'
 end
 
 # puts 'Would you like to do anything else ? "Yes" or "No" ?'
