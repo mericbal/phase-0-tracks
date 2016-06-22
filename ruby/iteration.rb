@@ -10,22 +10,26 @@ hash = {
     g: 7,
     h: 8,
 }
+#
+# array.each { |num|  puts num + 3 }
+#
+# p array
+#
+# array.map! { |num| num + 100}
+#
+# p array
+#
+# hash.each { |k, v| puts v + 7}
+#
+# p hash
+#
+# hash.map { |k, v| puts v + 107}
+#
+# p hash
 
-array.each { |num|  puts num + 3 }
-
+array.delete_if { |x| x < 5}
 p array
 
-array.map! { |num| num + 100}
-
-p array
-
-hash.each { |k, v| puts v + 7}
+hash.delete_if { |k, v| v < 5}
 
 p hash
-
-hash.map { |k, v| puts v + 107}
-
-p hash
-
-
-array.each { |i| puts i if i > 5}
