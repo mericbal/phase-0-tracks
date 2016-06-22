@@ -26,7 +26,7 @@
 "The case of the disappearing last letter".chop
 # => "The case of the disappearing last lette"
 
-# "The mystery of the missing first letter".<???>
+"The mystery of the missing first letter".reverse.chop.reverse
 # => "he mystery of the missing first letter"
 
 "Elementary,    my   dear        Watson!".squeeze
