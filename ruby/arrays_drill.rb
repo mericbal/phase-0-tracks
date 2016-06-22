@@ -1,3 +1,14 @@
+def cr_array(x, xx, xxx)
+  array3 = [x,xx,xxx]
+end
+
+def cr_array2(arr, z)
+  new = []
+  new.push(arr, z)
+  p new
+end
+
+
 array = []
 
 p array
@@ -29,3 +40,8 @@ array2 = [7,21,54,77]
 new_array = array + array2
 
 p new_array
+
+
+cr_array('Kaan', 'Berko', 'Can')
+
+p array3
