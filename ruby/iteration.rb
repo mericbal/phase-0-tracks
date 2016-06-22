@@ -5,4 +5,27 @@ hash = {
     b: 2,
     c: 3,
     d: 4,
+    e: 5,
+    f: 6,
+    g: 7,
+    h: 8,
 }
+
+array.each { |num|  puts num + 3 }
+
+p array
+
+array.map! { |num| num + 100}
+
+p array
+
+hash.each { |k, v| puts v + 7}
+
+p hash
+
+hash.map { |k, v| puts v + 107}
+
+p hash
+
+
+array.each { |i| puts i if i > 5}
