@@ -26,10 +26,16 @@ hash = {
 # hash.map { |k, v| puts v + 107}
 #
 # p hash
-
-array.delete_if { |x| x < 5}
-p array
-
-hash.delete_if { |k, v| v < 5}
-
-p hash
+#
+# array.delete_if { |x| x < 5}
+# p array
+#
+# hash.delete_if { |k, v| v < 5}
+# p hash
+#
+#
+# array.keep_if { |x|  x % 3 == 2 }
+# p array
+#
+# hash.keep_if { |k, v| v % 2 == 0}
+# p hash
