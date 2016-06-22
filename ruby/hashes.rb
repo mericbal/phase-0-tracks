@@ -1,16 +1,5 @@
 # User interface
 
-client_1 = {
-  name: 'meric',
-  address: '408',
-  age: 31,
-  phone: 707,
-  children: 0,
-  decor: 'blue',
-  firepit: true,
-  wooden: false,
-}
-
 puts 'Your name ?'
 name = gets.chomp.downcase
 puts 'How old are you ?'
@@ -19,11 +8,37 @@ puts 'Your address ?'
 address = gets.chomp.downcase
 puts 'Phone number ?'
 phone = gets.chomp.to_i
-puts 'Any children ? if yes , how many ?'
+puts 'Number of children ?'
 children = gets.chomp.downcase
 puts 'Decor color ?'
 decor = gets.chomp.downcase
-puts 'firepit ?'
+
+puts 'Wants firepit ?'
 firepit = gets.chomp.downcase
-puts 'Wooden floor ?'
+if firepit == 'yes'
+  firepit = true
+  else firepit == 'no'
+  firepit = false
+end
+
+puts 'Wants wooden floor ?'
 wooden = gets.chomp.downcase
+if wooden == 'yes'
+  wooden = true
+  else wooden == 'no'
+  wooden = false
+end
+
+
+client_1 = {
+  name: name,
+  address: address,
+  age: age,
+  phone: phone,
+  children: children,
+  decor: decor,
+  firepit: firepit,
+  wooden: wooden,
+}
+
+puts client_1
