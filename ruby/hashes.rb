@@ -1,5 +1,6 @@
 # User interface
 
+
 puts 'Your name ?'
 name = gets.chomp.downcase
 puts 'How old are you ?'
