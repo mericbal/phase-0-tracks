@@ -29,7 +29,6 @@ if wooden == 'yes'
   wooden = false
 end
 
-
 client_1 = {
   name: name,
   address: address,
@@ -40,5 +39,15 @@ client_1 = {
   firepit: firepit,
   wooden: wooden,
 }
+
+puts client_1
+
+puts 'Would you like to change your decor theme ?'
+answer = gets.chomp.downcase
+if answer == 'yes'
+  puts 'Which color ?'
+  client_1[:decor] = gets.chomp.downcase
+else answer == 'no'
+end
 
 puts client_1
