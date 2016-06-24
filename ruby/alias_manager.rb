@@ -39,31 +39,15 @@ def mixer(string)
                     harf.next
                     end
                 end
-    p letters.join('').capitalize
-    p letters.class
+    letters.join('')
 
 end
 
-mixer(agent_x[:first])
-mixer(agent_x[:last])
+agent_x[:fake_l] = mixer(agent_x[:first])
+agent_x[:fake_f] = mixer(agent_x[:last])
 
-#
-# vowels = ['a', 'e', 'i', 'o', 'u']
-#
-# letters = name.split('')
-# letters.map! do |letter|
-#                     if letter == ' '
-#                         letter = ' '
-#                     elsif letter == 'e'
-#                         letter = vowels['e']
-#                     else letter.next
-#                     end
-#             end
-# name = letters.join('')
-#
-# p name
-# p letters
-#
+p agent_x
+
 #
 # def agent_creator(name)
 #     i = 0
@@ -74,16 +58,3 @@ mixer(agent_x[:last])
 # end
 #
 # agent1[:name]
-#
-# def next_vowel(l)
-#     l1 = vowels[i]
-#     l = l1
-#     i = 0
-#     while i < vowels.length
-#
-#
-#
-# puts fname + ' ' + lname
-# puts lname
-#
-# p name.class
