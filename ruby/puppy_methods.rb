@@ -21,6 +21,10 @@ class Puppy
         puts 'Puppy loved ' + treat + ' !'
     end
 
+    def initialize
+        p 'Initializing ...'
+    end
+
 end
 
 kuti = Puppy.new
