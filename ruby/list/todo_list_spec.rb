@@ -1,3 +1,38 @@
+class TodoList
+
+    attr_accessor :item, :list
+
+    def initialize(list)
+        @list = list
+    end
+
+    def get_items
+        @list
+
+    end
+
+    def add_item(item)
+        @list.push(item)
+
+    end
+
+    def delete_item(item)
+        @list.delete(item)
+
+    end
+
+    def get_item(x)
+        p @list[0]
+
+    end
+
+end
+
+# list =[]
+# list.push(TodoList.new(["do the dishes", "mow the lawn"]))
+# p list
+
+
 describe TodoList do
   let(:list) { TodoList.new(["do the dishes", "mow the lawn"]) }
 
