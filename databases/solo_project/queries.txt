@@ -1,0 +1,51 @@
+1   sqlite> select * from cars;
+    1|BMW|335xi|2015|1
+    2|Maserati|Quatraporte|2014|2
+    3|Cadillac|Escalade|2015|3
+    4|Lexus|GS 300|2014|1
+    5|Toyota|Camry|2015|1
+    6|Audi|RS5|2014|2
+    7|Mercedes|C65 AMG|2016|2
+    8|Toyota|Highlander|2014|3
+    9|Chevy|Suburban|2015|3
+
+
+2   sqlite> select * from cars;
+    1|BMW|335xi|2015|1
+    2|Maserati|Quatraporte|2015|2
+    3|Cadillac|Escalade|2015|3
+    4|Lexus|GS 300|2015|1
+    5|Toyota|Camry|2015|1
+    6|Audi|RS5|2015|2
+    7|Mercedes|C65 AMG|2016|2
+    8|Toyota|Highlander|2015|3
+    9|Chevy|Suburban|2015|3
+
+
+3   sqlite> select * from cars, classes where cars.class_id = classes.id;
+    1|BMW|335xi|2015|1|1|Sedan
+    2|Maserati|Quatraporte|2015|2|2|Sport
+    3|Cadillac|Escalade|2015|3|3|SUV
+    4|Lexus|GS 300|2015|1|1|Sedan
+    5|Toyota|Camry|2015|1|1|Sedan
+    6|Audi|RS5|2015|2|2|Sport
+    7|Mercedes|C65 AMG|2016|2|2|Sport
+    8|Toyota|Highlander|2015|3|3|SUV
+    9|Chevy|Suburban|2015|3|3|SUV
+
+
+4   sqlite> select cars.make, cars.model, classes.name from cars join classes on cars.class_id = classes.id;
+    BMW|335xi|Sedan
+    Maserati|Quatraporte|Sport
+    Cadillac|Escalade|SUV
+    Lexus|GS 300|Sedan
+    Toyota|Camry|Sedan
+    Audi|RS5|Sport
+    Mercedes|C65 AMG|Sport
+    Toyota|Highlander|SUV
+    Chevy|Suburban|SUV
+
+
+5   sqlite> delete from cars where year=2015;
+    sqlite> select * from cars;
+    7|Mercedes|C65 AMG|2016|2
