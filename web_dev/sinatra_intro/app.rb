@@ -13,6 +13,16 @@ get '/' do
   "#{params[:name]} is #{params[:age]} years old."
 end
 
+get '/great_job' do
+    name = params[:name]
+    if name
+        'Good job , ' + name.to_s  + ' !'
+    else
+        'Good job! '
+    end
+end
+
+
 # write a GET route with
 # route parameters
 get '/about/:person' do
